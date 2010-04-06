@@ -1,5 +1,7 @@
+%define __libtoolize /bin/true
+
 Name: pidgin-sipe
-Version: 1.7.0
+Version: 1.9.1
 Release: %mkrel 1
 URL: http://sipe.sourceforge.net/
 License: GPLv2
