@@ -4,7 +4,7 @@ Release: %mkrel 1
 URL: http://sipe.sourceforge.net/
 License: GPLv2
 Group: Networking/Instant messaging
-Source: http://downloads.sourceforge.net/project/sipe/sipe/pidgin-sipe-1.7.0/pidgin-sipe-1.7.0.tar.gz
+Source: http://downloads.sourceforge.net/project/sipe/sipe/pidgin-sipe-%{version}/pidgin-sipe-%{version}.tar.gz
 Summary: SIP/SIMPLE plugin for pidgin
 BuildRequires: pidgin-devel intltool libgstreamer-plugins-base-devel
 BuildRoot: %{_tmppath}/%{name}-root
