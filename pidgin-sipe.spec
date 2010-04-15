@@ -1,7 +1,7 @@
 %define __libtoolize /bin/true
 
 Name: pidgin-sipe
-Version: 1.9.1
+Version: 1.10.0
 Release: %mkrel 1
 URL: http://sipe.sourceforge.net/
 License: GPLv2
@@ -27,7 +27,7 @@ Communicator client with Pidgin.
 %setup -q
 
 %build
-%configure
+%configure --enable-telepathy=no
 %make
 
 %install
@@ -44,3 +44,4 @@ rm -Rf %{buildroot}
 %{_libdir}/purple-2/*.so
 %exclude %{_libdir}/purple-2/libsipe.la
 %{_datadir}/pixmaps/pidgin/protocols/*/sipe.png
+%{_datadir}/pixmaps/pidgin/protocols/*/sipe.svg
