@@ -11,6 +11,7 @@ Summary: 	Pidgin protocol (SIP/SIMPLE) plugin to connect to MS Office Communicat
 #BuildRequires:	pidgin-devel
 BuildRequires:	pkgconfig(telepathy-glib)
 BuildRequires:	pkgconfig(glib-2.0) >= 2.28.0
+BuildRequires:	gmime-devel
 BuildRequires:	gettext
 BuildRequires:	krb5-devel
 BuildRequires:	pkgconfig(libxml-2.0)
