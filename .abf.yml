@@ -1,5 +1,2 @@
-removed_sources:
-  pidgin-sipe-1.11.2.tar.gz: e10f9adf6f446b77940c4cb5a1d45496f45200fc
-  pidgin-sipe-1.13.3.tar.bz2: ce2654af89b505e037feb459499aafa335cdb19b
 sources:
-  pidgin-sipe-1.15.0.tar.bz2: 25de09a2ca6902d7c00d6c417e179af10e20b7a2
+  pidgin-sipe-1.23.2.tar.bz2: 49d8cf5e39675485f17fc1886dcf0d01913b6cf5
