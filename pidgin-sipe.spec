@@ -1,11 +1,12 @@
 Name:		pidgin-sipe
-Version:	1.23.2
-Release:	2
+Version:	1.24.0
+Release:	1
 Summary:	Pidgin protocol (SIP/SIMPLE) plugin to connect to MS Office Communicator
 License:	GPLv2+
 Group:		Networking/Instant messaging
 URL:		http://sipe.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/project/sipe/sipe/%{name}-%{version}/%{name}-%{version}.tar.bz2
+BuildRequires:  appstream
 BuildRequires:	gettext
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(purple)
@@ -17,6 +18,7 @@ BuildRequires:	pkgconfig(nice) >= 0.1.0
 BuildRequires:	pkgconfig(nss)
 BuildRequires:	pkgconfig(gmime-2.6)
 BuildRequires:	pkgconfig(libgadu)
+BuildRequires:  pkgconfig(freerdp-shadow2)
 
 %description
 A third-party plugin for the Pidgin multi-protocol instant messenger.
@@ -62,5 +64,5 @@ rm -f \
 %dir %{_libdir}/purple-2
 %{_libdir}/purple-2/*.so
 %{_datadir}/pixmaps/pidgin/
-%{_datadir}/appdata/%{name}.metainfo.xml
+%{_datadir}/metainfo/%{name}.metainfo.xml
 
