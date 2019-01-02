@@ -18,7 +18,6 @@ BuildRequires:	pkgconfig(nice) >= 0.1.0
 BuildRequires:	pkgconfig(nss)
 BuildRequires:	pkgconfig(gmime-2.6)
 BuildRequires:	pkgconfig(libgadu)
-BuildRequires:  pkgconfig(freerdp-shadow2)
 
 %description
 A third-party plugin for the Pidgin multi-protocol instant messenger.
