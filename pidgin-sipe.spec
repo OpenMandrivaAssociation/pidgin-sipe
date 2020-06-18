@@ -1,14 +1,17 @@
 Name:		pidgin-sipe
 Version:	1.25.0
-Release:	1
+Release:	2
 Summary:	Pidgin protocol (SIP/SIMPLE) plugin to connect to MS Office Communicator
 License:	GPLv2+
 Group:		Networking/Instant messaging
 URL:		http://sipe.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/project/sipe/sipe/%{name}-%{version}/%{name}-%{version}.tar.bz2
-BuildRequires:  appstream
+Patch0:		pidgin-sipe-1.25.0-fix-false-negative-configure-checks.patch
+BuildRequires:	appstream
 BuildRequires:	gettext
 BuildRequires:	intltool
+BuildRequires:	flex
+BuildRequires:	gssntlmssp-devel
 BuildRequires:	pkgconfig(purple)
 BuildRequires:	pkgconfig(glib-2.0) >= 2.28.0
 BuildRequires:	pkgconfig(krb5)
@@ -18,7 +21,8 @@ BuildRequires:	pkgconfig(nice) >= 0.1.0
 BuildRequires:	pkgconfig(nss)
 BuildRequires:	pkgconfig(gmime-2.6)
 BuildRequires:	pkgconfig(libgadu)
-BuildRequires:  pkgconfig(freerdp-shadow2)
+BuildRequires:	pkgconfig(freerdp-shadow2)
+BuildRequires:	pkgconfig(dbus-glib-1)
 
 %description
 A third-party plugin for the Pidgin multi-protocol instant messenger.
@@ -35,17 +39,21 @@ With this plugin you should be able to replace your Microsoft Office
 Communicator client with Pidgin.
 
 %prep
-%setup -q
+%autosetup -p1
+autoreconf -fiv
 
 %build
-%configure2_5x \
-	--with-krb5 \
+%configure \
+	--with-krb5=yes \
+	--with-vv=yes \
+	--witch-dbus=yes \
 	--enable-purple \
 	--disable-telepathy
-%make
+
+%make_build
 
 %check
-%__make check
+make check
 
 %install
 %make_install
@@ -65,4 +73,3 @@ rm -f \
 %{_libdir}/purple-2/*.so
 %{_datadir}/pixmaps/pidgin/
 %{_datadir}/metainfo/%{name}.metainfo.xml
-
