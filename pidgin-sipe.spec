@@ -41,6 +41,8 @@ Communicator client with Pidgin.
 
 %prep
 %autosetup -p1
+# fix build by not using AM_GNU_GETTEXT macros 
+sed -ie '/AM_GNU_GETTEXT/d' configure.ac
 autoreconf -fiv
 
 %build
