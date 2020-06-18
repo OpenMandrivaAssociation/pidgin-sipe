@@ -23,6 +23,7 @@ BuildRequires:	pkgconfig(gmime-2.6)
 BuildRequires:	pkgconfig(libgadu)
 BuildRequires:	pkgconfig(freerdp-shadow2)
 BuildRequires:	pkgconfig(dbus-glib-1)
+BuildRequires:	pkgconfig(farstream-0.2)
 
 %description
 A third-party plugin for the Pidgin multi-protocol instant messenger.
