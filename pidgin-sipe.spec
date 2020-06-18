@@ -46,7 +46,7 @@ autoreconf -fiv
 %configure \
 	--with-krb5=yes \
 	--with-vv=yes \
-	--witch-dbus=yes \
+	--with-dbus=yes \
 	--enable-purple \
 	--disable-telepathy
 
