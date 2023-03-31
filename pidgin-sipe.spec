@@ -1,6 +1,6 @@
 Name:		pidgin-sipe
 Version:	1.25.0
-Release:	2
+Release:	3
 Summary:	Pidgin protocol (SIP/SIMPLE) plugin to connect to MS Office Communicator
 License:	GPLv2+
 Group:		Networking/Instant messaging
