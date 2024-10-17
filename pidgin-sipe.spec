@@ -4,7 +4,7 @@ Release:	3
 Summary:	Pidgin protocol (SIP/SIMPLE) plugin to connect to MS Office Communicator
 License:	GPLv2+
 Group:		Networking/Instant messaging
-URL:		http://sipe.sourceforge.net/
+URL:		https://sipe.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/project/sipe/sipe/%{name}-%{version}/%{name}-%{version}.tar.bz2
 Patch0:		pidgin-sipe-1.25.0-fix-false-negative-configure-checks.patch
 BuildRequires:	appstream
