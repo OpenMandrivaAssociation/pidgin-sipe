@@ -7,6 +7,11 @@ Group:		Networking/Instant messaging
 URL:		https://sipe.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/project/sipe/sipe/%{name}-%{version}/%{name}-%{version}.tar.bz2
 Patch0:		pidgin-sipe-1.25.0-fix-false-negative-configure-checks.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	appstream
 BuildRequires:	gettext
 BuildRequires:	intltool
