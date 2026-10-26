@@ -1,3 +1,5 @@
+%global optflags %{optflags} -Wno-cast-function-type -Wno-incompatible-pointer-types-discards-qualifiers
+
 Name:		pidgin-sipe
 Version:	1.25.0
 Release:	3
