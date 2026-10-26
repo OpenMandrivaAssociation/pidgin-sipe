@@ -26,7 +26,7 @@ BuildRequires:	pkgconfig(nice) >= 0.1.0
 BuildRequires:	pkgconfig(nss)
 BuildRequires:	pkgconfig(gmime-2.6)
 BuildRequires:	pkgconfig(libgadu)
-BuildRequires:	pkgconfig(freerdp-shadow2)
+# freerdp-shadow2.pc is gone. Appshare server support is optional in configure.
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(farstream-0.2)
 
