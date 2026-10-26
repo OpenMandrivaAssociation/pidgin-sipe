@@ -1,4 +1,5 @@
-%global optflags %{optflags} -Wno-cast-function-type -Wno-incompatible-pointer-types-discards-qualifiers
+# Upstream builds with -Werror. g_memdup is deprecated and that fails the build.
+%global optflags %{optflags} -Wno-cast-function-type -Wno-incompatible-pointer-types-discards-qualifiers -Wno-deprecated-declarations
 
 Name:		pidgin-sipe
 Version:	1.25.0
