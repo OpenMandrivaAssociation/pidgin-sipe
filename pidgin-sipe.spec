@@ -49,6 +49,8 @@ Communicator client with Pidgin.
 
 %prep
 %autosetup -p1
+# libxml2 2.12 made xmlStructuredErrorFunc take a const xmlError.
+sed -i 's/xmlErrorPtr error/const xmlError *error/' src/core/sipe-xml.c
 # fix build by not using AM_GNU_GETTEXT macros 
 sed -ie '/AM_GNU_GETTEXT/d' configure.ac
 autoreconf -fiv
